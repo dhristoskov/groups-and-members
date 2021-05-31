@@ -1,0 +1,29 @@
+@import '../../../styles/variables.scss';
+
+.notification {
+    position: fixed;
+    z-index: 100;
+    bottom: 10px;
+    width: 100%;
+    height: 40px;
+   
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 15px;
+        width: 100%;
+        height: 100%;
+
+        &-message {
+            font-size: 15px;
+            color: $color-white;
+        }
+    
+        &-icon {
+            font-size: 22px;
+            color: $text-color;
+            margin-right: 30px;
+        }
+    }
+}

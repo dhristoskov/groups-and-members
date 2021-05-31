@@ -1,0 +1,44 @@
+@import '../../../styles/variables.scss';
+
+.user-dropdown {
+    width: 100%;
+    max-height: 200px;
+    overflow: auto;
+
+    &-empty {
+        text-align: center;
+        font-weight: 600;
+        color: $text-color;    
+    }
+
+    &-element {
+        margin-bottom: 3px;
+        display: flex;
+        align-items: center;
+        padding: 3px 10px;
+        border-bottom: 2px solid $text-color;
+
+        &_item {
+            width: 85%;
+            font-weight: 500;   
+            color: $text-color;        
+        }  
+        
+        &_button {
+            position: relative;
+            cursor: pointer;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background-color: $base-icon-color;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
+    
+            &-icon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

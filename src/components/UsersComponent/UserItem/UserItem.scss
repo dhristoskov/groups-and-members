@@ -1,0 +1,65 @@
+@import '../../../styles/variables.scss';
+
+.user {
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
+
+    &-upper {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-icon {
+            width: 64px;
+            height: auto;
+            margin-bottom: 5px;
+        }
+    
+        &-name {
+            display: flex;
+            color: $text-color;
+            
+            &-first {
+                margin-right: 5px;
+            }
+        }
+    
+        &-groups {
+            text-align: center;
+            width: 100%;
+            margin: 5px 0;
+            font-size: 14px;
+        }
+    }
+
+
+    &-buttons {
+        margin: 10px 0;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            position: relative;
+            cursor: pointer;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background-color: $base-icon-color;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
+
+            &_icon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

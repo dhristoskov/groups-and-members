@@ -1,0 +1,27 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px auto 20px auto;
+
+    &-pages {
+        font-weight: 600;
+        margin-right: 10px;
+    }
+
+    &-page{
+        list-style: none;
+        margin-right: 5px;
+
+        &-button {
+            padding: 10px;
+            font-size: 18xp;
+            font-weight: 700;
+            background-color: transparent;
+            border:none;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}

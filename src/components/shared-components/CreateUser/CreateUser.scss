@@ -1,0 +1,36 @@
+@import '../../../styles/variables.scss';
+
+.create-user {
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px 5px 5px;
+    max-width: 280px;
+    border: 2px solid $icon-lite;
+    border-radius: 30px;
+
+    &-title {
+        color: $text-color;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &-wrapper {       
+        position: relative;
+        background: $base-icon-color;
+        border-radius: 50%;
+        height: 45px;
+        width: 45px;
+        margin-right: 20px;
+
+        &_icon {
+            font-size: 26px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import '../../../styles/variables.scss';
+
+.navigation {
+    width: 100%;
+    background-color: $base-color-lite;
+
+    &-wrapper {      
+        margin: auto;
+        width: 50%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;       
+    
+        &-link {
+            text-align: center;
+            flex: 1;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+            color: $text-color;
+            transition: all 0.3s ease-in-out;
+
+            &:hover,
+            &.active {
+                 color: $active-text-color;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .navigation {
+    
+        &-wrapper {
+            width: 80%;
+        }
+    }
+}

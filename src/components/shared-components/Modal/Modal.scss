@@ -1,0 +1,33 @@
+@import '../../../styles/variables.scss';
+
+.modal-wrapper {
+    position: fixed;
+    z-index: 50;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid $text-color;
+    width: 35%;
+    min-height: 150px;
+    padding: 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 920px) {
+    .modal-wrapper { 
+       width: 50%;
+    }
+}
+
+@media (max-width: 620px) {
+    .modal-wrapper { 
+       width: 80%;
+    }
+}
+
+@media (max-width: 420px) {
+    .modal-wrapper { 
+       width: 95%;
+    }
+}

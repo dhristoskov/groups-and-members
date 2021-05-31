@@ -1,0 +1,36 @@
+@import '../../../styles/variables.scss';
+
+.select-wrapper {
+    border: 1px solid $text-color;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 16px;
+    outline: none;
+
+    &-default {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 3px 0 3px 10px;
+        color: $text-color;
+        font-weight: 600;
+    }
+
+    &-selectors {
+        background-color: $color-white;
+        color: $text-color;
+        margin-top: 5px;
+        padding: 5px 5px 5px 10px;
+        width: 100%;
+        position: absolute;
+        z-index: 1000;
+        font-size: 14px;
+
+        &_item {
+            cursor: pointer;
+            margin-bottom: 3px;
+        }
+    }
+}
